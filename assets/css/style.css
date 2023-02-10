@@ -308,6 +308,41 @@ body {
   object-fit: cover;
 }
 
+.has-scrollbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  overflow-x: auto;
+  scroll-snap-type: inline mandatory;
+  padding-block-end: 20px;
+  margin-block-end: -20px;
+}
+
+.scrollbar-card {
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+  height: 10px;
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  outline: 2px solid var(--portland-orange);
+  border-radius: var(--radius-10);
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: var(--radius-10);
+  background-color: var(--portland-orange);
+  border: 2px solid var(--white);
+}
+
+.has-scrollbar::-webkit-scrollbar-button {
+  width: calc(25% - 30px);
+}
+
+
 /* End */
 
 /* Hero */
@@ -339,6 +374,28 @@ body {
 /* END */
 
 /* Category */
+
+.category-card .card-banner {
+  border-radius: var(--radius-10);
+}
+
+.category-card .img-cover {
+  transition: var(--transition-2);
+}
+
+.category-card:is(:hover, :focus-within) .img-cover {
+  transform: scale(1.08);
+}
+
+.category-card .card-title {
+  margin-block-start: 15px;
+  text-align: center;
+  transition: var(--transition-1);
+}
+
+.category-card .card-title:is(:hover, :focus) {
+  color: var(--portland-orange);
+}
 
 /* END */
 

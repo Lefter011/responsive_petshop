@@ -436,6 +436,60 @@ body {
 
 /* Product */
 
+.product .img-cover.hover, .product-card .card-action-btn {
+  display: none;
+}
+
+.product-card {
+  text-align: center;
+}
+
+.product-card .card-banner {
+  border: 1px solid var(--platinum);
+  border-radius: var(--radius-10);
+  margin-block-end: 20px
+}
+
+.product-card :is(.wrapper, .rating-wrapper) {
+  display: flex;
+}
+
+.product-card .wrapper {
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--silver-chalice);
+  font-size: var(--fs-7);
+}
+
+.product-card .rating-wrapper {
+  color: var(--amber);
+  gap: 2px;
+}
+
+.product-card .rating-wrapper.gray {
+  color: unset;
+}
+
+.product-card .h3 {
+  --fs-3: 1.8rem;
+  margin-block: 8px 10px;
+}
+
+.product-card .card-title {
+  transition: var(--transition-1);
+}
+
+.product-card .card-title:is(:hover, :focus) {
+  color: var(--portland-orange);
+}
+
+.product-card .card-price {
+  color: var(--portland-orange);
+  font-size: var(--fs-4);
+  font-weight: var(--fw-700);
+}
+
 /* END */
 
 /* Serice */

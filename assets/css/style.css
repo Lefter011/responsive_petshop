@@ -342,6 +342,11 @@ body {
   width: calc(25% - 30px);
 }
 
+.grid-list {
+  display: grid;
+  gap: 30px
+}
+
 
 /* End */
 
@@ -400,6 +405,32 @@ body {
 /* END */
 
 /* Offers */
+
+.offer-card {
+  border-radius: var(--radius-10);
+  padding: 20px;
+  display: grid;
+  align-content: center;
+}
+
+.offer-card .card-subtitle {
+  font-size: var(--fs-7);
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+}
+
+.offer-card .card-title {
+  color: var(--black);
+  margin-block: 5px 24px;
+}
+
+.offer-card .btn {
+  background-color: var(--portland-orange);
+}
+
+.offer-card .btn:is(:hover, :focus) {
+  background-color: var(--black);
+}
 
 /* END */
 

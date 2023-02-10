@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Petshop</title>
+    <meta name="title" content="Responsive Petshop" />
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@6.1.1/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@6.1.1/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="header" data-header>
+      <div class="container">
+        <button
+          class="nav-toggle-btn"
+          aria-label="toggle menu"
+          data-nav-toggler
+        >
+          <ion-icon
+            name="menu-outline"
+            aria-hidden="true"
+            class="menu-icon"
+          ></ion-icon>
+          <ion-icon
+            name="close-outline"
+            aria-label="true"
+            class="close-icon"
+          ></ion-icon>
+        </button>
+        <a href="#" class="logo">Kitter</a>
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#shop" class="navbar-link" data-nav-link>Shop</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>Collections</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>Blogs</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+          <a href="#" class="navbar-action-btn">Log In</a>
+        </nav>
+        <div class="header-action">
+          <button class="action-btn" aria-label="Search">
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="action-btn user" aria-label="User">
+            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="action-btn" aria-label="cart">
+            <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+            <span class="btn-badge">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

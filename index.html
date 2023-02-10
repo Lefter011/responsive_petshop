@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@6.1.1/dist/ionicons/ionicons.esm.js"
@@ -80,5 +81,24 @@
         </div>
       </div>
     </header>
+
+    <main>
+      <article>
+        <section
+          class="section hero has-bg-image"
+          id="home"
+          aria-label="home"
+          style="background-image: url('./assets/images/hero-banner.jpg')"
+        >
+          <div class="container">
+            <h1 class="h1 hero-title">
+              <span class="span">High Quality</span> Pet Food
+            </h1>
+            <p class="hero-text">Sale up to 40% off today</p>
+            <a href="#" class="btn">Shop Now</a>
+          </div>
+        </section>
+      </article>
+    </main>
   </body>
 </html>

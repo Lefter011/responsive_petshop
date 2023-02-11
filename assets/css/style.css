@@ -324,7 +324,7 @@ body {
 }
 
 .has-scrollbar::-webkit-scrollbar {
-  height: 10px;
+  height: 20px;
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
@@ -339,7 +339,7 @@ body {
 }
 
 .has-scrollbar::-webkit-scrollbar-button {
-  width: calc(25% - 30px);
+  width: calc(15% - 30px);
 }
 
 .grid-list {
@@ -557,6 +557,27 @@ body {
 /* END */
 
 /* Brand */
+
+.brand {
+  --section-padding: 100px;
+}
+
+.brand .has-scrollbar {
+  gap: 0;
+}
+
+.brand .scrollbar-card {
+  min-width: 50%;
+}
+
+.brand .scrollbar-card:not(:last-child) {
+  border-inline-end: 1px solid var(--platinum);
+}
+
+.brand-card {
+  max-width: max-content;
+  margin-inline: auto;
+}
 
 /* END */
 

@@ -583,9 +583,137 @@ body {
 
 /* Footer */
 
+.footer {
+  background-color: var(--raisin-black);
+  color: var(--battleship-gray);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+
+.footer-top {
+  padding-block-start: 100px;
+  border-block-end: 1px solid var(--onyx);
+}
+
+.footer-top .container {
+  display: grid;
+  gap: 30px;
+}
+
+.footer .logo {
+  color: var(--white);
+  margin-block-end: 10px;
+}
+
+.footer-text {
+  font-size: var(--fs-6);
+  margin-block-end: 25px;
+}
+
+.footer-text .link {
+  display: inline;
+  color: var(--portland-orange);
+}
+
+.contact-item {
+  margin-block-end: 15px;
+  color: var(--white);
+  font-weight: var(--fw-700);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-item ion-icon {
+  flex-shrink: 0;
+  font-size: 22px;
+  color: var(--portland-orange);
+}
+
+.social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.social-link {
+  background-color: var(--white);
+  color: var(--black);
+  padding: 12px;
+  border-radius: 50%;
+  transition: var(--transition-1);
+}
+
+.social-link:is(:hover, :focus) {
+  background-color: var(--portland-orange);
+  color: var(--white);
+}
+
+.footer-list-title {
+  color: var(--white);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+  padding-block: 10px;
+}
+
+.footer-link {
+  padding-block: 4px;
+  transition: var(--transition-1);
+}
+
+.footer-link:is(:hover, :focus) {
+  color: var(--portland-orange);
+}
+
+.footer-bottom {
+  padding-block: 20px;
+}
+
+.copyright {
+  margin-block-end: 10px;
+}
+
+.copyright-link {
+  display: inline-block;
+  transition: var(--transition-1);
+  
+}
+
+.copyright-link:is(:hover, :focus) {
+  color: var(--portland-orange);
+  transform: scale(1.05);
+}
+
+.footer-bottom .img {
+  width: 100%;
+  max-width: max-content;
+}
+
 /* END */
 
 /* Back to top  */ 
+
+.back-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: var(--portland-orange);
+  color: var(--white);
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-2);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-1);
+  z-index: 4;
+}
+
+.back-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
 
 /* END */
 

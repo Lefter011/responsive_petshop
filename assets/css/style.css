@@ -719,4 +719,291 @@ body {
 
 /* Media Queries  */
 
-/* END */
+@media (min-width: 575px) {
+
+  :root {
+    --fs-2: 4rem;
+    --fs-3: 2.6rem;
+  }
+
+  .scrollbar-card {
+    min-width: calc(50% - 15px);
+  }
+
+  .grid-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Hero */
+
+  .hero {
+    display: grid;
+    padding-inline-start: 20px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  /* Offer */
+
+  .offer .grid-list {
+    grid-template-columns: 1fr;
+  }
+
+  /* Product   */
+
+  .product-card .card-banner {
+    position: relative;
+  }
+
+  .product-card .card-action-btn,
+  .product-card .card-banner .hover {
+    display: block;
+    position: absolute;
+  }
+
+  .product-card .card-banner .hover {
+    top: 0;
+    left: 0;
+  }
+
+  .product-card:is(:hover, :focus-within) .default,
+  .product-card .hover {
+    opacity: 0;
+  }
+
+  .product-card .default,
+  .product-card:is(:hover, :focus-within) .hover {
+    opacity: 1;
+  }
+
+  .product-card .card-action-btn {
+    top: 15px;
+    right: 15px;
+    color: var(--eerie-black);
+    font-size: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--platinum);
+    padding: 12px;
+    border-radius: 50%;
+    transition: var(--transition-1);
+    opacity: 0;
+  }
+
+  .product-card .card-action-btn:is(:hover, :focus) {
+    background-color: var(--portland-orange);
+    border-color: var(--portland-orange);
+    color: var(--white);
+  }
+
+  .product-card:is(:hover, :focus-within) .card-action-btn {
+    opacity: 1;
+  }
+
+  /* CTA   */
+
+  .cta .img {
+    width: 250px;
+  }
+
+  .cta .h2 {
+    --fs-2: 3.2rem;
+  }
+
+  /* Brand   */
+
+  .brand .scrollbar-card {
+    min-width: 25%;
+  }
+
+  /* Footer   */
+
+  .footer-top .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  :root {
+    --fs-1: 9rem;
+  }
+
+  .scrollbar-card {
+    min-width: calc(33.33% - 20px);
+  }
+
+  .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Hero   */
+
+  .hero {
+    aspect-ratio: 1512 / 784;
+    padding-inline-start: 10%;
+  }
+
+  .hero-text {
+    font-size: 2.4rem;
+  }
+
+  /* Offer  */
+
+  .offer .grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* CTA   */
+
+  .cta-banner {
+    display: block;
+  }
+
+  .cta .container {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    align-items: flex-end;
+  }
+
+  /* Footer   */
+
+  .footer-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --fs-1: 12rem;
+    --fs-3: 3rem;
+
+    --section-padding: 50px;
+  }
+
+  .container {
+    padding-inline: 30px;
+  }
+
+  .scrollbar-card {
+    min-width: calc(20% - 24px);
+  }
+
+  /* Header  */
+
+  .nav-toggle-btn,
+  .navbar-action-btn {
+    display: none;
+  }
+
+  .header {
+    --color: var(--white);
+    background: none;
+  }
+
+  .header.active {
+    --color: var(--black);
+    background-color: var(--white);
+  }
+
+  .header .logo,
+  .header .action-btn {
+    color: var(--color);
+  }
+
+  .header .action-btn.user {
+    display: block;
+  }
+
+  .logo {
+    font-size: 3.8rem;
+  }
+
+  .navbar,
+  .navbar.active {
+    all: unset;
+    margin-inline-end: auto;
+  }
+
+  .navbar-list {
+    display: flex;
+    gap: 10px;
+  }
+
+  .navbar-link {
+    color: var(--color);
+    --fs-6: 1.7rem;
+    font-weight: var(--fw-700);
+    transition: var(--transition-1);
+  }
+
+  .header.active .navbar-link:is(:hover, :focus) {
+    color: var(--portland-orange);
+  }
+
+  /* Hero   */
+
+  .hero {
+    margin-block-start: 0;
+  }
+
+  /* Category   */
+
+  .category-card .h3 {
+    --fs-3: 2rem;
+  }
+
+  /* Service   */
+
+  .service .grid-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .service-card .h3 {
+    --fs-3: 2.4rem;
+  }
+
+  /* Brand  */
+
+  .brand .scrollbar-card {
+    min-width: 20%;
+  }
+
+  /* Footer   */
+
+  .footer-top .container {
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  :root {
+    --fs-1: 15rem;
+    --fs-3: 3.2rem;
+  }
+
+  .grid-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* CTA   */
+
+  .cta-content {
+    padding-block: 100px;
+  }
+
+  /* Brad Footer   */
+
+  :is(.brand, .footer) .container {
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .footer {
+    padding-block-start: 40px;
+  }
+}
